@@ -1,0 +1,157 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases,parameters
+,,,,,,,,,,,,,,,,,,,,12,2,"Web App Testing Natallia Kuzmiankova",1
+190,"Adding an item to the cart by a registered user",,"1. The user is registered",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to https://demowebshop.tricentis.com/
+2. In the ""FEATURED PRODUCTS"" section, select the product and click on the ""Add to cart"" button
+","1. The main page is opened
+2. The product has been added to the shopping cart. A visual confirmation is displayed
+","1. 
+2. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+192,"Removing an item from the shopping cart by clicking on the ""Update shopping cart"" button",,"The page **https://demowebshop.tricentis.com/cart**  is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the checkbox in the ""Remove"" column
+2. Click on the button ""Update shopping cart"" or press ""ENTER"" on the keyboard
+","1. The checkbox in the ""Remove"" column in the ""enabled"" mode
+2. The selected item has been removed from the shopping cart. The message ""Your Shopping Cart is empty!"" appeared.
+","1. 
+2. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+193,"Increasing the quantity of goods using the ""Quantity"" field in the shopping cart",,"The page **https://demowebshop.tricentis.com/cart** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the ""Quantity"" field
+2. Enter a value in the field ""Quantity"" consisting of numbers
+3. Click on the ""Update shopping cart"" button or press ""ENTER"" on the keyboard
+","1. The field ""Quantity"" is now active and user can enter values
+2. The value is entered into the field ""Quantity""
+3. The page has been updated. The entered value is displayed in the ""Quantity"" field
+","1. 
+2. 10
+3. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+194,"Validation the ""Quantity"" field when changing the number of items in the shopping cart (invalid data: numbers >10000)",,"The page **https://demowebshop.tricentis.com/cart** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the ""Quantity"" field
+2. Enter a value in the ""Quantity"" field consisting of numbers
+3. Click on the ""Update shopping cart"" button or press ""ENTER"" on the keyboard
+","1. The field ""Quantity"" is now active and user can enter values
+2. The value is entered into the ""Quantity"" field
+3. The page has been updated.The message ""The maximum quantity allowed for purchase is 10000"" appeared
+","1. 
+2. 10001
+3. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+195,"Validation the ""Quantity"" field when changing the number of items in the shopping cart (invalid data: letters)",,"The page **https://demowebshop.tricentis.com/cart** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the ""Quantity"" field
+2. Enter a value in the ""Quantity"" field consisting of letters
+3. Click on the ""Update shopping cart"" button or press ""ENTER"" on the keyboard
+","1. The field ""Quantity"" is now active and user can enter values
+2. The value is entered into the ""Quantity"" field
+3. The page has been updated.The value in the ""Quantity"" field has returned to the original approved value
+","1. 
+2. hundred
+3. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+196,"Validation the ""Quantity"" field when changing the number of items in the shopping cart (valid data: numbers ≤10000)",,"The page **https://demowebshop.tricentis.com/cart** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the ""Quantity"" field
+2. Enter a value in the ""Quantity"" field consisting of numbers
+3. Click on the ""Update shopping cart"" button or press ""ENTER"" on the keyboard
+","1. The field ""Quantity"" is now active and user can enter values
+2. The value is entered into the ""Quantity"" field
+3. The page has been updated. The entered value is displayed in the ""Quantity"" field
+","1. 
+2. 9999
+3. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+197,"Transition to the payment page for purchases by clicking on the ""Checkout"" button from the shopping cart",,"1. The user is registered
+2. The page **https://demowebshop.tricentis.com/cart** is open
+3. An item was previously added to the cart",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the ""Terms of service"" checkbox
+2. Click on the button ""Checkout""
+","1. The checkbox ""Terms of service"" in the ""enabled"" mode
+2. The user is redirected to the checkout page
+","1. 
+2. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+203,"Successful payment for a purchase by credit card on the Checkout page",,"1. The user is registered
+2. An item was previously added to the cart
+3. The page **https://demowebshop.tricentis.com/onepagecheckout** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Select an address from the drop-down list on the 'Billing Address' page
+2. Click 'Continue' button
+3. Select a shipping address from the drop-down list on the 'Shipping Address' page
+4. Click on the 'Continue' button
+5. Click on the 'Continue' button
+6. Click on the 'Continue' button
+7. Enter credit card details from test data
+8. Click on the 'Continue' button
+9. Click on the 'Confirm' button
+","1. The drop-down list is opened.The user can select an address
+2. The 'Shipping Address' page has opened.
+3. The drop-down list is opened.The user can select  a shipping address
+4. The 'Shipping Method' page has opened.The user can select the delivery method by clicking on the desired radio button
+5. The 'Payment Method' page has opened.The user can select the payment method by clicking on the desired radio button
+6. The 'Payment Information' page has opened.
+7. The entered information is displayed in the fields
+8. The 'Confirm Order' page has opened. Information about the product being paid is displayed
+9. The 'Thank you' page has opened. The page displays the order number, the message ""Your order has been successfully processed!"" and the link ""Click here for order details"".
+","1. 
+2. 
+3. 
+4. 
+5. Payment method: Credit Card
+6. 
+7. * credit card: VISA
+* cardholder name: TEST
+* card number: 4111111111111111
+* Expiration date: 12/2025
+* Card code:123
+8. 
+9. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+210,"Unsuccessful payment for a purchase by credit card on the Checkout page",,"1. The user is registered
+2. An item was previously added to the cart
+3. The page **https://demowebshop.tricentis.com/onepagecheckout** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Select an address from the drop-down list on the 'Billing Address' page
+2. Click 'Continue' button
+3. Select a shipping address from the drop-down list on the 'Shipping Address' page
+4. Click on the 'Continue' button
+5. Click on the 'Continue' button
+6. Click on the 'Continue' button
+7. Enter credit card details from test data
+8. Click on the 'Continue' button
+9. Click on the 'Confirm' button
+","1. The drop-down list is opened.The user can select an address
+2. The 'Shipping Address' page has opened.
+3. The drop-down list is opened.The user can select  a shipping address
+4. The 'Shipping Method' page has opened.The user can select the delivery method by clicking on the desired radio button
+5. The 'Payment Method' page has opened.The user can select the payment method by clicking on the desired radio button
+6. The 'Payment Information' page has opened.
+7. The entered information is displayed in the fields
+8. The 'Confirm Order' page has opened. Information about the product being paid is displayed
+9. The message ""The payment could not be processed: there are not enough funds on the balance"" appeared
+","1. 
+2. 
+3. 
+4. 
+5. Payment method: Credit Card
+6. 
+7. * credit card: VISA
+* cardholder name: TEST
+* card number: 4024007123874108
+* Expiration date: 12/2025
+* Card code:123
+8. 
+9. 
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+221,"Card number validation when filling out payment information on the checkout page (invalid data: cyrillic letters)","1. The page **https://demowebshop.tricentis.com/onepagecheckout** is open
+2. All fields except 'Card number' filled with valid data",,,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field 'Card number'
+2. Enter a value in the field 'Card number' consisting of cyrillic letters
+","1. The field 'Card number' is now active. The user can enter values
+2. The value is entered into the field 'Card number'. The message ""Wrong card number"" appeared.
+","1. 
+2. один
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+222,"Card number validation when filling out payment information on the checkout page (invalid data: special characters)","1. The page **https://demowebshop.tricentis.com/onepagecheckout** is open
+2. All fields except 'Card number' filled with valid data",,,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field 'Card number'
+2. Enter a value in the field 'Card number' consisting of special characters
+","1. The field 'Card number' is now active. The user can enter values
+2. The value is entered into the field 'Card number'. The message ""Wrong card number"" appeared.
+","1. 
+2. !""№
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,
+223,"Card number validation when filling out payment information on the checkout page (invalid data: latin letters)","1. The page **https://demowebshop.tricentis.com/onepagecheckout** is open
+2. All fields except 'Card number' filled with valid data",,,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field 'Card number'
+2. Enter a value in the field 'Card number' consisting of latin letters
+","1. The field 'Card number' is now active. The user can enter values
+2. The value is entered into the field 'Card number'. The message ""Wrong card number"" appeared.
+","1. 
+2. One
+",,,12,2,"Web App Testing Natallia Kuzmiankova",,

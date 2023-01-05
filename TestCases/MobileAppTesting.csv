@@ -1,0 +1,243 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases,parameters
+,,,,,,,,,,,,,,,,,,,,20,3,"Mobile App Testing Natallia Kuzmiankova",1
+290,"Adding a New TO-DO by taping the floating action button  '+' at the bottom of the screen",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Enter a value in the field 'Title'
+4. Enter a value in the field 'Body'
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The value is entered into the field 'Title'
+4. The value is entered into the field 'Body'
+5. The task 'Dinner' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. Dinner
+4. salad
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+292,"Validation the 'Title' field when creating a New TO-DO (valid data: latin letters)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Title' field
+4. Enter a value in the 'Title' field consisting of latin letters
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Title' is now active and user can enter values
+4. The value is entered into the 'Title' field
+5. The task 'Breakfast' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. Breakfast
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+293,"Validation the 'Title' field when creating a New TO-DO (valid data: numbers)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Title' field
+4. Enter a value in the 'Title' field consisting of numbers
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Title' is now active and user can enter values
+4. The value is entered into the 'Title' field
+5. The task '7777' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. 7777
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+294,"Validation the 'Title' field when creating a New TO-DO (valid data: cyrillic letters)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Title' field
+4. Enter a value in the 'Title' field consisting of cyrillic letters
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Title' is now active and user can enter values
+4. The value is entered into the 'Title' field
+5. The task 'Список гостей' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. Список гостей
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+295,"Validation the 'Title' field when creating a New TO-DO (valid data: Emoji)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Title' field
+4. Enter a value in the 'Title' field consisting of Emoji
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Title' is now active and user can enter values
+4. The value is entered into the 'Title' field
+5. The task '😀' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. 😀
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+296,"Validation the 'Title' field when creating a New TO-DO (valid data: special characters)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Title' field
+4. Enter a value in the 'Title' field consisting of special characters
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Title' is now active and user can enter values
+4. The value is entered into the 'Title' field
+5. The task '$$$$' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. $$$$
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+297,"Adding an Empty TO-DO by taping the floating action button  '+' at the bottom of the screen",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Leave the ""Title"" and 'Body' fields blank
+4. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The ""Title"" and 'Body' fields are empty
+4. The confirmation toast ""TO-DO can not be empty"" is appeared. The task is not created.
+","1. 
+2. 
+3. 
+4. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+298,"Validation the 'Body' field when creating a New TO-DO (valid data: latin letters)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Body' field
+4. Enter a value in the 'Body' field consisting of latin letters
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Body' is now active and user can enter values
+4. The value is entered into the 'Body' field
+5. The task 'Holiday' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. Holiday
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+299,"Validation the 'Body' field when creating a New TO-DO (valid data: cyrillic letters)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Body' field
+4. Enter a value in the 'Body' field consisting of cyrillic letters
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Body' is now active and user can enter values
+4. The value is entered into the 'Body' field
+5. The task 'Футбол' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. Футбол
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+300,"Validation the 'Body' field when creating a New TO-DO (valid data: numbers)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Body' field
+4. Enter a value in the 'Body' field consisting of numbers
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field ''Body' is now active and user can enter values
+4. The value is entered into the 'Body' field
+5. The task '0000' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. 0000
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+301,"Validation the 'Body' field when creating a New TO-DO (valid data: Emoji)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Body' field
+4. Enter a value in the 'Body' field consisting of Emoji
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Body' is now active and user can enter values
+4. The value is entered into the 'Body' field
+5. The task '⚽️' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. ⚽️
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+302,"Validation the 'Body' field when creating a New TO-DO (valid data: special characters)",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Tap on the 'Body' field
+4. Enter a value in the 'Body' field consisting of special characters
+5. Tap on the floating action button '✓' at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The field 'Body' is now active and user can enter values
+4. The value is entered into the 'Body' field
+5. The task '@@@' is created. The confirmation toast ""TO-DO saved"" is appeared
+","1. 
+2. 
+3. 
+4. @@@
+5. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+303,"Deleting a TO-DO by taping the button 'Delete task'",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Enter a value in the field 'Title'
+4. Tap on the floating action button '✓' at the bottom of the screen
+5. Tap on the task 'Purchases'
+6. Tap the button 'Delete task'
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The value is entered into the field 'Title'
+4. The task 'Purchases' is created. The confirmation toast ""TO-DO saved"" is appeared
+5. The page with task 'Purchases' is opened
+6. The task 'Purchases' has been removed
+","1. 
+2. 
+3. Purchases
+4. 
+5. 
+6. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,
+304,"Editing a TO-DO by taping the floating action button ""🖍"" at the bottom of the screen",,"1. The Android Studio is open
+2. The application TO-DO-MVP has been installed",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Launch the application TO-DO-MVP
+2. Tap on the floating action button '+' at the bottom of the screen
+3. Enter a value in the field 'Title'
+4. Tap on the floating action button '✓' at the bottom of the screen
+5. Tap on the task 'pizza'
+6. Tap on the floating action button ""🖍"" at the bottom of the screen
+","1. The application TO-DO-MVP is launched
+2. The ""New TO-DO"" page is displayed
+3. The value is entered into the field 'Title'
+4. The task 'pizza' is created. The confirmation toast ""TO-DO saved"" is appeared
+5. The page with task 'pizza' is opened
+6. The page 'Edit TO-DO' has opened and the user can edit the task
+","1. 
+2. 
+3. pizza
+4. 
+5. 
+6. 
+",,,20,3,"Mobile App Testing Natallia Kuzmiankova",,

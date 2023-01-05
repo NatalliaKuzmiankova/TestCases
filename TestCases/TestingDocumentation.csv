@@ -1,0 +1,308 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases,parameters
+,,,,,,,,,,,,,,,,,,,,5,1,"Testing Documentation Natallia Kuzmiankova",1
+1,"The add a customer by clicking on the button ""Add Customer"" on the main page",,,,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to https://demo.guru99.com/telecom/index.html
+2. Click 'Add Customer' button
+","1. The main page is opened 
+
+<br>
+2. The Add Customer window is opened
+","1. 
+2. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+2,"The add a customer by clicking on the button ""Add Customer"" on the side dropdown hamburger-menu",,,,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Go to https://demo.guru99.com/telecom/index.html
+2. Click on the dropdown hamburger-menu
+3. Click 'Add Customer' button
+","1. The main page is opened
+2. The dropdown hamburger-menu is opened
+3. The Add Customer window is opened
+","1. 
+2. 
+3. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+3,"Select user status using the ""Background Check"" radio button on the Add Customer page",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Select user status via ""Background Check"" radio button
+2. Click on the radio button ""Done""
+3. Click on the radio button ""Pending""
+","1. The User status is selected
+2. The radio button ""Done"" is selected. The radio button ""Pending"" isn't selected
+3. The radio button ""Pending"" is selected. The radio button ""Done"" isn't selected
+","1. 
+2. 
+3. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+9,"First Name validation to create a Billing Address on the Add Customer page (valid data: latin letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field First Name
+2. Enter a value in the field First Name consisting of latin letters
+","1. The field First Name is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field First Name
+","1. 
+2. Harry
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+10,"Last Name validation to create a Billing Address on the Add Customer page (invalid data: special characters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Last Name
+2. Enter a value in the field Last Name consisting of special characters
+","1. The field Last Name is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Last Name. The message ""Special characters are not allowed"" appeared under the field Last Name
+","1. 
+2. %()\*_)&^
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+11,"First Name validation to create a Billing Address on the Add Customer page (invalid data: cyrillic letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field First Name
+2. Enter a value in the field First Name consisting of cyrillic letters
+","1. The field First Name is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field First Name. The message ""Cyrillic are not allowed"" appeared under the field First Name
+","1. 
+2. Наталья
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+12,"First Name validation to create a Billing Address on the Add Customer page (invalid data: numbers)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field First Name
+2. Enter a value in the field First Name consisting of numbers
+","1. The field First Name is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field First Name. The message ""Numbers are not allowed"" appeared under the field First Name
+","1. 
+2. 0123456789
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+13,"First Name validation to create a Billing Address on the Add Customer page (data: empty value)",,"1. The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open
+2. All fields except First Name filled with valid data",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field First Name
+2. Leave field First Name blank
+3. Click on the Submit button
+","1. The field First Name is now active and highlighted in blue. The user can enter values
+2. The field First Name is empty
+3. The message ""First Name must not be blank"" appeared
+","1. 
+2. 
+3. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+14,"Last Name validation to create a Billing Address on the Add Customer page (valid data: latin letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Last Name
+2. Enter a value in the field Last Name consisting of latin letters
+","1. The field Last Name is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Last Name
+","1. 
+2. Potter
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+15,"First Name validation to create a Billing Address on the Add Customer page (invalid data: special characters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field First Name
+2. Enter a value in the field First Name consisting of special characters
+","1. The field First Name is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field First Name. The message ""Special characters are not allowed"" appeared under the field First Name
+","1. 
+2. !@#$%^&\*
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+16,"Last Name validation to create a Billing Address on the Add Customer page (invalid data: cyrillic letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Last Name
+2. Enter a value in the field Last Name consisting of cyrillic letters
+","1. The field Last Name is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Last Name. The message ""Cyrillic are not allowed"" appeared under the field Last Name
+","1. 
+2. Поттер
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+17,"Last Name validation to create a Billing Address on the Add Customer page (invalid data: numbers)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Last Name
+2. Enter a value in the field Last Name consisting of numbers
+","1. The field Last Name is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Last Name. The message ""Numbers are not allowed"" appeared under the field Last Name
+","1. 
+2. 012345678901234567890123456789
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+18,"Last Name validation to create a Billing Address on the Add Customer page (data: empty value)",,"1. The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open
+2. All fields except Last Name filled with valid data",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Last Name
+2. Leave field Last Name blank
+3. Click on the Submit button
+","1. The field Last Name is now active and highlighted in blue. The user can enter values
+2. The field Last Name is empty
+3. The message ""Last Name must not be blank"" appeared
+","1. 
+2. 
+3. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+19,"Email validation to create a Billing Address on the Add Customer page (valid data: latin letters; .com; .ru; @)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Email
+2. Enter a value in the field Email consisting of latin letters; .com; @
+3. Enter a value in the field Email consisting of latin letters; .ru; @
+","1. The field Email is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Email
+3. The value is entered into the field Email
+","1. 
+2. Potter@gmail.com
+3. Harry@yandex.ru
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+26,"Email validation to create a Billing Address on the Add Customer page (invalid data: latin letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Email
+2. Enter a value in the field Email consisting of latin letters
+","1. The field Email is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Email. The message Email is not valid appears
+","1. 
+2. Hogwarts
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+27,"Email validation to create a Billing Address on the Add Customer page (invalid data: cyrillic letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Email
+2. Enter a value in the field Email consisting of cyrillic letters
+","1. The field Email is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Email. The message Email is not valid appears
+","1. 
+2. Хогвартс
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+29,"Email validation to create a Billing Address on the Add Customer page (invalid data: numbers)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Email
+2. Enter a value in the field Email consisting of numbers
+","1. The field Email is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Email. The message Email is not valid appears
+","1. 
+2. 01234567890123
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+30,"Email validation to create a Billing Address on the Add Customer page (invalid data: special characters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Email
+2. Enter a value in the field Email consisting of special characters
+","1. The field Email is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Email. The message Email is not valid appears
+","1. 
+2. !@#.
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+31,"Email validation to create a Billing Address on the Add Customer page (data: empty value)",,"1. The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open
+2. All fields except Email filled with valid data",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Email
+2. Leave field Email blank
+3. Click on the Submit button
+","1. The field Email is now active and highlighted in blue. The user can enter values
+2. The field Email is empty
+3. The message ""Email must not be blank"" appeared
+","1. 
+2. 
+3. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+32,"Address validation to create a Billing Address on the Add Customer page (valid data: latin letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Address
+2. Enter a value in the field Address consisting of latin letters
+","1. The field Address is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Address
+","1. 
+2. Street
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+33,"Address validation to create a Billing Address on the Add Customer page (valid data: special character dot)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Address
+2. Enter a value in the field Address consisting of special character dot
+","1. The field Address is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Address
+","1. 
+2. .
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+34,"Address validation to create a Billing Address on the Add Customer page (valid data: special character comma)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Address
+2. Enter a value in the field Address consisting of special character comma
+","1. The field Address is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Address
+","1. 
+2. ,
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+36,"Address validation to create a Billing Address on the Add Customer page (invalid data: cyrillic letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Address
+2. Enter a value in the field Address consisting of cyrillic letters
+","1. The field Address is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Address. The message сyrillic are not allowed appears
+","1. 
+2. Улица Тисовая
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+40,"Address validation to create a Billing Address on the Add Customer page (invalid data: special characters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Address
+2. Enter a value in the field Address consisting of special characters
+","1. The field Address is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Address. The message Special characters are not allowed appears
+","1. 
+2. %^&$+-
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+42,"Address validation to create a Billing Address on the Add Customer page (data: empty value)",,"1. The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open
+2. All fields except Address filled with valid data",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Address
+2. Leave field Address blank
+3. Click on the Submit button
+","1. The field Address is now active and highlighted in blue. The user can enter values
+2. The field Address is empty
+3. The message ""Address must not be blank"" appeared
+","1. 
+2. 
+3. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+44,"Address validation to create a Billing Address on the Add Customer page (invalid data: numbers)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Address
+2. Enter a value in the field Address consisting of numbers
+","1. The field Address is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Address. The message Numbers are not allowed appears
+","1. 
+2. 05897453610254699999111222
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+46,"Mobile number validation to create a Billing Address on the Add Customer page (valid data: numbers)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Mobile number
+2. Enter a value in the field Mobile number consisting of numbers
+","1. The field Mobile number is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Mobile number
+","1. 
+2. 524685458
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+47,"Mobile number validation to create a Billing Address on the Add Customer page (invalid data: special characters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Mobile number
+2. Enter a value in the field Mobile number consisting of special characters
+","1. The field Mobile number is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Mobile number. The message Special characters are not allowed appears
+","1. 
+2. ()_+=
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+48,"Mobile number validation to create a Billing Address on the Add Customer page (invalid data: latin letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Mobile number
+2. Enter a value in the field Mobile number consisting of latin letters
+","1. The field Mobile number is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Mobile number. The message Characters are not allowed appears
+","1. 
+2. ABCDFGabcdfg
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+49,"Mobile number validation to create a Billing Address on the Add Customer page (invalid data: cyrillic letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Mobile number
+2. Enter a value in the field Mobile number consisting of cyrillic letters
+","1. The field Mobile number is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Mobile number. The message Characters are not allowed appears
+","1. 
+2. Номер
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+50,"Mobile number validation to create a Billing Address on the Add Customer page (invalid data: arabic letters)",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Mobile number
+2. Enter a value in the field Mobile number consisting of arabic letters
+","1. The field Mobile number is now active and highlighted in blue. The user can enter values
+2. The value is entered into the field Mobile number. The message Characters are not allowed appears
+","1. 
+2. زََايٌّ
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+51,"Mobile number validation to create a Billing Address on the Add Customer page (data: empty value)",,"1. The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open
+2. All fields except Mobile number filled with valid data",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Click on the field Mobile number
+2. Leave field Mobile number blank
+3. Click on the Submit button
+","1. The field Mobile number is now active and highlighted in blue. The user can enter values
+2. The field Mobile number is empty
+3. The message Mobile must not be blank appeared
+","1. 
+2. 
+3. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+52,"Check that each field on the Add Customer page has the correct label",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,low,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Verify that the each field has the correct label
+","1. Each field has the correct label
+","1. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+53,"Check that inside each field on the Add Customer page there is a placeholder that repeats the label of the field",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,low,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Verify that the each field has a placeholder with the correct name
+","1. Each field has a placeholder with the correct name
+","1. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+54,"Check that each field on the Add Customer page is required and marked special character *",,"The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open",,,low,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Verify that each field on the Add Customer page is required and marked special character \*
+","1. Each field is required and marked special character \*
+","1. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+55,"Check that a pop-up window appears on the Add Customer page if the required fields are not filled",,"1. The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open
+2. The User status is selected",,,low,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Verify that the required fields are not filled
+2. Click on the Submit button
+","1. Required fields are not filled
+2. A pop-up window ""Please fill all fields"" has appeared
+","1. 
+2. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+66,"Check that the Reset button resets all filled values and error messages",,"1. The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open
+2. The User status is selected
+3. All fields are filled with correct data",,,low,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Verify that the all fields are filled and status is selected
+2. Click on the Reset button
+","1. All fields are filled and status is selected
+2. All filled values are reset
+","1. Background Check: Pending
+First Name: Sandra
+Last Name: Reeves
+Email: Sandra@gmail.com
+Address: London
+Mobile number: 565689510
+2. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
+68,"Check that the Submit button saves the user in the database",,"1. The page ***https://demo.guru99.com/telecom/addcustomer.php*** is open
+2. The User status is selected
+3. All fields are filled with correct data",,,medium,normal,other,undefined,is-not-automated,actual,no,unknown,classic,"1. Verify that the all fields are filled and status is selected
+2. Click on the Submit button
+3. Click on the Home button
+","1. All fields are filled and status is selected
+2. The Access Details to Guru99 Telecom page opens. Customer ID information and Please Note Down Your Customer ID message appeared.Customer ID consists of 6 digits
+3. Main page opened
+","1. Background Check: Done
+First Name: Keanu
+Last Name: Bullock
+Email: Bullock@gmail.com
+Address: Washington
+Mobile number: 789654123
+2. 
+3. 
+",,,5,1,"Testing Documentation Natallia Kuzmiankova",,
